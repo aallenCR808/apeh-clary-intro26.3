@@ -152,7 +152,6 @@ Layout suggested to separate areas for readabillity
 
 #Skills {
   /* background-color: #000000; */
-
   color: #ffffff;
   text-align: center;
   /* padding: 10px 10px 20px 10px; */
@@ -184,12 +183,16 @@ Layout suggested to separate areas for readabillity
   list-style-type: none;
   padding-left: 0;
   margin-left: 0;
-  color: white;
 }
 li a {
   text-decoration: none;
   font-size: 20px;
   color: white;
+}
+#Connect a:hover {
+  background-color: #b0e2ff;
+  /* background-color: #ddd; */
+  color: black;
 }
 
 footer {
