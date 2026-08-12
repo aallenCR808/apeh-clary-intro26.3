@@ -9,110 +9,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Apeh Clary's Profile</title>
-    <style>
-      body {
-        background-color: rgb(186, 226, 231);
-        text-align: center;
-      }
-      h1 {
-        color: rgb(0, 0, 0);
-      }
-      p {
-        color: rgb(0, 0, 0);
-      }
-
-      #Navbar {
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      /* Add a black background color to the top navigation */
-      .topnav {
-        background-color: #333;
-        overflow: hidden;
-      }
-
-      /* Style the links inside the navigation bar */
-      .topnav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 4px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-
-      /* Change the color of links on hover */
-      .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      /* Add a color to the active/current link */
-      /* .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-} */
-      ul {
-        list-style-type: none;
-        padding-left: 0;
-        margin-left: 0;
-      }
-      li a {
-        text-decoration: none;
-      }
-
-      #Connect ul {
-        display: flex;
-        justify-content: center;
-      }
-      #Connect li {
-        margin-inline: 1rem;
-      }
-    </style>
+    <link href="css/index.css" rel="stylesheet">
+    
   </head>
 
   <body>
-    <div id="Navbar" class="topnav">
-      <a href="#About">About</a>
-      <a href="#Experience">Experience</a>
-      <a href="#Connect">Connect</a>
-    </div>
-    <h1>Apeh Clary</h1>
+      <div id="Navbar" class="topnav">
+        <a href="#About">About</a>
+        <a href="#Experience">Experience</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Connect">Connect</a>
+      </div>
 
-    <section id="About">
-      <h2>About</h2>
-      <p>
-        Hi! I am learning how to code and this is my first webpage. I live in the San Francisco Bay
-        Area. I have a dog named Nahla. We like to take long walks on the beach and play fetch.
-      </p>
-    </section>
+    <h1 id="Name" class="Name">Apeh Clary</h1>
 
-    <section id="Experience">
-      <h2>Experience</h2>
-      <ul>
-        <li>HTML</li>
-        <li>Javascript</li>
-        <li>CSS</li>
-        <li>Code the Dream: Intro to Programming</li>
-        <li>Dog Walker</li>
-        <li>Caregiver</li>
-      </ul>
-    </section>
+    <main>
+      <section id="About">
+        <h2>About</h2>
+        <p>
+          Hi! I am learning how to code and this is my first webpage. I live in the San Francisco Bay
+          Area. I have a dog named Nahla. We like to take long walks on the beach and play fetch.
 
-    <section id="Connect">
-      <h2>Connect</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat voluptatibus tenetur earum voluptates. Blanditiis atque vitae eaque accusantium at itaque reprehenderit animi tempora aspernatur ducimus fuga, molestias impedit distinctio explicabo.
+        </p>
+      </section>
 
-      <!-- insert icons -->
-      <!-- <i class="fa-brands fa-github"></i> -->
+      <section id="Experience"> <!-- this has the background-->
+        <h2>Experience</h2> 
+        <!-- width, centered, and flex to make columns-->
+         
+        <div class="jobs">
+          <!-- job 1 -->
+          <div class="job">
+            <h3 class="item">August Walks Pet Caregiving</h3>
+            <p class="item">2016 - Present</p>
+            <p class="item full">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        <!-- job 1 -->
+          <div class="job">
+            <h3 class="item">Job 2</h3>
+            <p class="item">Dates</p>
+            <p class="item full">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          
+          </div>
+        <!-- job 2 -->
+          <div class="job">
+            <h3 class="item">Job 3</h3>
+            <p class="item full">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        <!-- job 3 -->
+          <div class="job">
+            <h3 class="item">Job 4</h3>
+            <p class="item full">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+      
+        <!-- column 4 -->
+         <!-- <div class="column">
+          <h3>Code the Dream: Intro to Programming</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, iure est labore ipsum ullam, sed eaque atque nisi asperiores tenetur obcaecati neque.</p>
+         </div> -->
+        </div> <!-- closing my experience columns -->
+      </section> <!-- closing my experience section -->
 
-      <ul>
-        <li><a href="https://github.com/aallenCR808">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/apehclary">LinkedIn</a></li>
-        <!-- sm icons -->
-      </ul>
-    </section>
+        <!-- <ul>
+          <li>HTML</li>
+          <li>Javascript</li>
+          <li>CSS</li>
+          <li>Code the Dream: Intro to Programming</li>
+          <li>Dog Walker</li>
+          <li>Caregiver</li>
+          <li>Plant Dad</li>
+          </li>Dog Dad</li>
+        </ul> -->
+      </section>
+
+      <section id="Skills">
+        <h2>Skills</h2>
+        <div class="columns">
+        <!-- column 1 -->
+          <div class="column">
+            <h3>HTML</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        <!-- column 2 -->
+          <div class="column">
+            <h3>JavaScript</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        <!-- column 3 -->
+          <div class="column">
+            <h3>CSS</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+
+        </section>
+
+      <section id="Projects">
+        <h2>Projects</h2>
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vitae aperiam harum ipsum reiciendis dolor repellendus necessitatibus.</p>
+          <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vitae aperiam harum ipsum reiciendis dolor repellendus necessitatibus.</p>
+          <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vitae aperiam harum ipsum reiciendis dolor repellendus necessitatibus.</p>
+        <!-- <ul></ul> -->
+      </section>
+
+      <section id="Connect">
+        <h2>Connect</h2>
+        <!-- insert icons -->
+        <!-- <i class="fa-brands fa-github"></i> -->
+
+          <ul>
+            <li><a href="https://github.com/aallenCR808" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/apehclary" target="_blank">LinkedIn</a></li>
+            <!-- sm icons and learn more about me link attribute/anchor. create p class {}? -->
+          </ul>
+      </section>
+    </main>
+    <footer> Copyright info </footer>
   </body>
 </html>
