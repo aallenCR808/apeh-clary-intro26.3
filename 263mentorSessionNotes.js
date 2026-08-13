@@ -1282,20 +1282,20 @@ console.log("Q5", "Color property deleted:", !myPet.hasOwnProperty("color"));
 
 // PUT YOUR CODE HERE
 
-const pets = [
-  { name: "Gideon", species: "cat", color: "white and brown tabby" },
-  { name: "Luna", species: "cat", color: "black" },
-  { name: "Coco", species: "cat", color: "brown tabby" },
-];
+// const pets = [
+//   { name: "Gideon", species: "cat", color: "white and brown tabby" },
+//   { name: "Luna", species: "cat", color: "black" },
+//   { name: "Coco", species: "cat", color: "brown tabby" },
+// ];
 
-function printPets(arr) {
-  arr.forEach((obj) => {
-    console.log(obj);
-  });
-}
+// function printPets(arr) {
+//   arr.forEach((obj) => {
+//     console.log(obj);
+//   });
+// }
 
-console.log("Q6:");
-printPets(pets);
+// console.log("Q6:");
+// printPets(pets);
 //---------- QUESTION 7 ----------
 // So far you've been writing out each pet object by hand, property by property. That gets
 // tedious fast if you need many similar objects — imagine typing out 20 pet objects like in Q6!
@@ -1323,16 +1323,16 @@ printPets(pets);
 // PUT YOUR CODE HERE
 //constructor function named Dog, inc name, breed, age. Create 2 dog instances with diff values. use console.log() to display both instances
 
-function Dog(name, breed, age) {
-  this.name = name;
-  this.breed = breed;
-  this.age = age;
-}
-let dog1 = new Dog("John", "Chihuahua", 5);
-let dog2 = new Dog("Luna", "Shih Tzu", 1);
+// function Dog(name, breed, age) {
+//   this.name = name;
+//   this.breed = breed;
+//   this.age = age;
+// }
+// let dog1 = new Dog("John", "Chihuahua", 5);
+// let dog2 = new Dog("Luna", "Shih Tzu", 1);
 
-console.log("Q7:", dog1);
-console.log("Q7:", dog2);
+// console.log("Q7:", dog1);
+// console.log("Q7:", dog2);
 
 //---------- QUESTION 8 ----------
 // Write a function called isSameBreed(dog1, dog2) that takes two Dog objects
@@ -1354,17 +1354,17 @@ console.log("Q7:", dog2);
 //  Q8: Same breed - dog1 vs dog3: true
 
 // PUT YOUR CODE HERE
-function isSameBreed(dog1, dog2) {
-  if (dog1.breed === dog2.breed) {
-    return true;
-  } else {
-    return false;
-  }
-}
-let dog3 = new Dog("Gideon", "Schnauzer", 3);
+// function isSameBreed(dog1, dog2) {
+//   if (dog1.breed === dog2.breed) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// let dog3 = new Dog("Gideon", "Schnauzer", 3);
 
-console.log("Q8: Same breed - dog1 vs dog2:", isSameBreed(dog1, dog2));
-console.log("Q8: Same breed - dog1 vs dog3:", isSameBreed(dog1, dog3));
+// console.log("Q8: Same breed - dog1 vs dog2:", isSameBreed(dog1, dog2));
+// console.log("Q8: Same breed - dog1 vs dog3:", isSameBreed(dog1, dog3));
 
 //---------- QUESTION 9 ----------
 //Learn how to use the built-in Date object in JavaScript to retrieve and display the current date. See https://www.w3schools.com/js/js\_dates.asp as a reference. Create a variable called currentDate. Assign it the value of a new Date() object.
@@ -1376,9 +1376,9 @@ console.log("Q8: Same breed - dog1 vs dog3:", isSameBreed(dog1, dog3));
 //  Q9: Current Date: 2025-09-13T23:47:23.858Z
 
 // PUT YOUR CODE HERE
-let currentDate = new Date();
+// let currentDate = new Date();
 
-console.log("Q9: Current Date:", currentDate);
+// console.log("Q9: Current Date:", currentDate);
 
 //---------- QUESTION 10 ----------
 //Use JavaScript's Date object to retrieve specific parts of the current date. Using the currentDate from Question 9, write three separate lines of code to extract:
@@ -1399,10 +1399,16 @@ console.log("Q9: Current Date:", currentDate);
 //  Q10 Day: 13
 
 // PUT YOUR CODE HERE
-const year = currentDate.getFullYear();
-const month = currentDate.getMonth();
-const day = currentDate.getDate();
+// const year = currentDate.getFullYear();
+// const month = currentDate.getMonth();
+// const day = currentDate.getDate();
 
-console.log("Q10 Year:", year);
-console.log("Q10 Month:", month);
-console.log("Q10 Day:", day);
+// console.log("Q10 Year:", year);
+// console.log("Q10 Month:", month);
+// console.log("Q10 Day:", day);
+
+//Sunset Contrast Palette:Midnight Blue: #191970Dodger Blue: #1E90FFDark Orange: #FF8C00Gold Accent: #FFD700
+
+/* #fb9527; #f9f9f9  */
+/* color: #ff5722; */
+/* #8fa3e7; */
