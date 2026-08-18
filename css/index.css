@@ -43,7 +43,9 @@ html {
   text-shadow: 2px 2px 4px rgba(168, 158, 158, 0.3);
 }
 body {
-  margin: 20px 10px 20px 10px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
   /* set margin: 0; can add default font-size. will affect everything on the page */
   /* background-color: rgb(186, 226, 231); */
   /* background-color: rgb(245, 169, 184); */
@@ -52,24 +54,22 @@ body {
   /* background-color: rgb(43, 39, 39); */
   text-align: center;
   background-color: rgb(43, 39, 39);
+  margin: 0;
 }
-section {
+/* section {
   /* border: 10px solid pink; */
-  /* block is y axis up and down. inline is x axis left and right */
-  margin-block: 25px;
-}
-main {
+/* block is y axis up and down. inline is x axis left and right
+} */
+/* main {
   margin: 25px 25px;
-}
+} */
 h1 {
   color: #eaf1f5;
   background: steelblue;
-  /* font-weight: 200px; */
   font-size: 48px;
   padding: 10px;
   /* border: 10px solid pink; */
   text-align: center;
-  margin: 25px 25px;
 }
 h2 {
   color: #b0e2ff;
@@ -86,6 +86,7 @@ p {
   font-size: 20px;
   font-weight: 100;
   margin: 10px 0 10px 0px;
+  line-height: 1.2;
 }
 /* =========
 Layout suggested to separate areas for readabillity 
@@ -118,9 +119,6 @@ Layout suggested to separate areas for readabillity
   justify-content: space-evenly;
 }
 .job {
-  /* background: pink; */
-  /* width: 500px; */
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -129,6 +127,7 @@ Layout suggested to separate areas for readabillity
   border-radius: 7px;
   margin: 5px;
   padding: 10px;
+  text-align: left;
 }
 .item {
   /* border: solid yellow 2px; */
@@ -137,6 +136,7 @@ Layout suggested to separate areas for readabillity
 
 .full {
   flex: 1 1 100%;
+  padding-block: 10px;
 }
 /* ul {
     list-style-type: none;
@@ -153,8 +153,18 @@ Layout suggested to separate areas for readabillity
 #Skills {
   /* background-color: #000000; */
   color: #ffffff;
-  text-align: center;
-  /* padding: 10px 10px 20px 10px; */
+  padding: 10px 10px 20px 10px;
+}
+#Skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
 }
 .columns {
   /* parent element, direct children become columns  */
