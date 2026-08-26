@@ -20,6 +20,7 @@
         <a href="#Skills">Skills</a>
         <a href="#Projects">Projects</a>
         <a href="#Connect">Connect</a>
+        <a href="#leave_message">Leave a Message</a>
       </div>
 
     <h1 id="Name" class="Name">Apeh Clary</h1>
@@ -89,8 +90,37 @@
           </ul>
       </section>
     </main>
-    <script>
-    </script>
+
+    <!-- Leave a message: FORM -->
+    <section id="leave_message">
+      <h2>Leave a Message</h2>
+
+      <form name="leave_message">
+        <label>Name:
+          <input name="usersName" type="text" required>
+        </label>
+        <br>
+
+        <label>Email:
+          <input name="usersEmail" type="email" required>
+        </label>
+        <br>
+
+        <label>Message:
+        <textarea name="usersMessage" required></textarea>
+        </label>
+      <br>
+
+      <!-- Subtmit Button -->
+      <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
+    </section>
+
     <script src="js/index.js"></script>
   </body>
 </html>
