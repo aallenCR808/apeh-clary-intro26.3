@@ -10,13 +10,6 @@ for (let i = 0; i < skills.length; i++) {
   skillsList.appendChild(skill);
 }
 
-// Alternate way that AirHub didn't like:
-// for (let skillName of skills) {
-//   const skill = document.createElement("li");
-//   skill.innerText = skillName;
-//   skillsList.appendChild(skill);
-// }
-
 // message form
 let messageForm = document.forms["leave_message"];
 
@@ -35,16 +28,9 @@ messageForm.addEventListener("submit", function (event) {
   newMessage.innerHTML = `<a href="mailto:${email}">${name}</a>
   <span>${message}</span>`;
 
-  // add new message in messages section
-  messageList.appendChild(newMessage);
-
-  console.log(name, email, message);
-
-  messageForm.reset();
-
   // create remove button, add 'remove' button to have remove message option
   let removeButton = document.createElement("button");
-  removeButton.textContent = "Remove";
+  removeButton.textContent = "remove";
   removeButton.type = "button";
 
   removeButton.addEventListener("click", function () {
@@ -52,16 +38,13 @@ messageForm.addEventListener("submit", function (event) {
     entry.remove();
 
     if (document.querySelector("#messages>ul").children.length > 0)
-      document.querySelector("#messages").style.display;
+      document.querySelector("#messages").style.display = "block";
     else document.querySelector("#messages").style.display = "none";
   });
 
   newMessage.appendChild(removeButton);
-
-  if (document.querySelector("#messages>ul").children.length > 0)
-    document.querySelector("#messages").style.display = "block";
-  else document.querySelector("#messages").style.display = "none";
-
+  // add new message in messages section
+  messageList.appendChild(newMessage);
   messageForm.reset();
 });
 
