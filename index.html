@@ -9,63 +9,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Apeh Clary's Profile</title>
-    <link href="css/index.css" rel="stylesheet">
-    
+    <link href="css/index.css" rel="stylesheet" />
   </head>
 
   <body>
-      <div id="Navbar" class="topnav">
-        <a href="#About">About</a>
-        <a href="#Experience">Experience</a>
-        <a href="#Skills">Skills</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Connect">Connect</a>
-      </div>
+    <div id="Navbar" class="topnav">
+      <a href="#About">About</a>
+      <a href="#Experience">Experience</a>
+      <a href="#Skills">Skills</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Connect">Connect</a>
+      <a href="#leave_message">Leave a Message</a>
+    </div>
 
     <h1 id="Name" class="Name">Apeh Clary</h1>
 
     <main>
-
       <section id="About">
         <h2>About</h2>
         <p>
-          Hi! I am learning how to code and this is my first webpage. I live in the San Francisco Bay
-          Area. I have a dog named Nahla. We like to take long walks on the beach and play fetch.
+          Hi! I am learning how to code and this is my first webpage. I live in the San Francisco
+          Bay Area. I have a dog named Nahla. We like to take long walks on the beach and play
+          fetch.
         </p>
       </section>
 
-      <section id="Experience"> <!-- this has the background-->
-        <h2>Experience</h2> 
+      <section id="Experience">
+        <!-- this has the background-->
+        <h2>Experience</h2>
         <!-- width, centered, and flex to make columns-->
-         
+
         <div class="jobs">
           <!-- job 1 -->
           <div class="job">
             <h3 class="item">August Walks Pet Caregiving</h3>
             <p class="item">2017 - Present</p>
-            <p class="item full">Provide individualized service, care, and training for pets. Ensure timely administration of medications, meal times, pet specific socialization and exercise for over four hundred families.</p>
+            <p class="item full">
+              Provide individualized service, care, and training for pets. Ensure timely
+              administration of medications, meal times, pet specific socialization and exercise for
+              over four hundred families.
+            </p>
           </div>
-        <!-- job 2 -->
+          <!-- job 2 -->
           <div class="job">
             <h3 class="item">Amazon Retail Locker Associate</h3>
             <p class="item">2025 - 2026</p>
-            <p class="item full">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="item full">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-        <!-- job 3 -->
+          <!-- job 3 -->
           <div class="job">
             <h3 class="item">Social Media Coordinator</h3>
             <p class="item">2017 - 2021</p>
-            <p class="item full">Managed graphic design of website, Youtube, Instagram, Facebook and Patreon. Facilitated growth of Instagram to 40,000 followers. Created/deployed monthly email newsletters with recipes and tips. Produced/edited music videos with Final Cut Pro. Planned speaking, performing, and food demo events. Designed and procured merchandise for sale.
+            <p class="item full">
+              Managed graphic design of website, Youtube, Instagram, Facebook and Patreon.
+              Facilitated growth of Instagram to 40,000 followers. Created/deployed monthly email
+              newsletters with recipes and tips. Produced/edited music videos with Final Cut Pro.
+              Planned speaking, performing, and food demo events. Designed and procured merchandise
+              for sale.
             </p>
           </div>
-        </div> <!-- closing my experience columns -->
-      </section> 
+        </div>
+        <!-- closing my experience columns -->
       </section>
 
       <section id="Skills">
         <h2>Skills</h2>
         <ul></ul>
-        </section>
+      </section>
 
       <section id="Projects">
         <h2>Projects</h2>
@@ -82,15 +92,47 @@
         <h2>Connect</h2>
         <!-- insert icons -->
         <!-- <i class="fa-brands fa-github"></i> -->
-          <ul>
-            <li><a href="https://github.com/aallenCR808" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/apehclary" target="_blank">LinkedIn</a></li>
-            <!-- sm icons and learn more about me link attribute/anchor. create p class {}? -->
-          </ul>
+        <ul>
+          <li><a href="https://github.com/aallenCR808" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/apehclary" target="_blank">LinkedIn</a></li>
+          <!-- sm icons and learn more about me link attribute/anchor. create p class {}? -->
+        </ul>
       </section>
     </main>
-    <script>
-    </script>
+
+    <!-- Leave a message: FORM -->
+    <section id="leave_message">
+      <h2>Leave a Message</h2>
+
+      <form name="leave_message">
+        <label>
+          Name:
+          <input name="usersName" type="text" required />
+        </label>
+        <br />
+
+        <label>
+          Email:
+          <input name="usersEmail" type="email" required />
+        </label>
+        <br />
+
+        <label>
+          Message:
+          <textarea name="usersMessage" required></textarea>
+        </label>
+        <br />
+
+        <!-- Subtmit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
+    </section>
+
     <script src="js/index.js"></script>
   </body>
 </html>

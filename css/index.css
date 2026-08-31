@@ -138,17 +138,6 @@ Layout suggested to separate areas for readabillity
   flex: 1 1 100%;
   padding-block: 10px;
 }
-/* ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
-    font-size: 24px;
-    color: white;
-  }
-  li a {
-    text-decoration: none;
-    color: white;
-  } */
 
 #Skills {
   /* background-color: #000000; */
@@ -205,6 +194,61 @@ li a {
   color: black;
 }
 
+#leave_message {
+  padding: 10px 10px;
+  color: #ffffff;
+}
+#leave_message form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+}
+#leave_message form label {
+  font-size: 20px;
+}
+/* leave a message form */
+#leave_message input {
+  padding: 10px 20px;
+  border: 1px;
+  border-radius: 5px;
+}
+#leave_message form textarea {
+  margin-top: 10px;
+  padding: 10px 10px 50px;
+  border-radius: 5px;
+  width: 99%;
+  height: 100%;
+}
+#leave_message button {
+  padding: 8px 30px;
+  background: rgb(255, 255, 255);
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+  width: 150px;
+  align-self: center;
+  border-radius: 5px;
+}
+#messages {
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+#messages ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 20px;
+}
+#messages button {
+  font-size: 18px;
+  border-radius: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
 footer {
   color: #f2f2f2;
 }
