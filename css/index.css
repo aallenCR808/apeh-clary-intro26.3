@@ -170,6 +170,17 @@ Layout suggested to separate areas for readabillity
   text-align: center;
   padding: 10px 10px 20px 10px;
 }
+#Projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+}
 #Connect {
   /* background-color: #000000; */
   color: #ffffff;

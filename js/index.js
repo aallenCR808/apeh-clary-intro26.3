@@ -58,3 +58,56 @@ const thisYear = today.getFullYear();
 const copyright = document.createElement("p");
 copyright.innerHTML = `\u00A9 Apeh Clary ${thisYear}`;
 footer.appendChild(copyright);
+
+// console.log(fetch("https://api.github.com/users/aallenCR808/repos"));
+
+let main = document.querySelector("main");
+let repositories = [];
+
+fetch("https://api.github.com/users/aallenCR808/repos")
+  .then((response) => {
+    //chain a then method to fetch
+
+    if (!response.ok) {
+      throw new Error("Request failed");
+    }
+    return response.json(); //parse the response as JSON, call and pass it a function that returns the response JSON data
+  })
+
+  .then((data) => {
+    repositories = data; //do something with the data
+    console.log(repositories);
+
+    //assign data to webpage
+    const projectSection = document.querySelector("#Projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+      let project = document.createElement("li");
+      project.innerText = repositories[i]["name"];
+      projectList.appendChild(project);
+    }
+  })
+
+  .catch((error) => {
+    console.error("An error occurred:", error);
+  });
+
+// async function getCharacters() {
+// try {
+//   const response = await fetch('characters.json')
+
+// if(!response.ok) {
+//   throw new Error('Request failed')
+// }
+
+// const data = await response.json()
+
+// console.log(data)
+// console.log(data.party)
+
+// } catch (error) {
+// console.error('Error!', error)
+// }
+// }
+// getCharacters();
