@@ -92,22 +92,3 @@ fetch("https://api.github.com/users/aallenCR808/repos")
   .catch((error) => {
     console.error("An error occurred:", error);
   });
-
-// async function getCharacters() {
-// try {
-//   const response = await fetch('characters.json')
-
-// if(!response.ok) {
-//   throw new Error('Request failed')
-// }
-
-// const data = await response.json()
-
-// console.log(data)
-// console.log(data.party)
-
-// } catch (error) {
-// console.error('Error!', error)
-// }
-// }
-// getCharacters();
