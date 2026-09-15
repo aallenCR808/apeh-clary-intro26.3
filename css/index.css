@@ -259,6 +259,7 @@ li a {
   font-size: 18px;
   border-radius: 5px;
   font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
 }
 footer {
   color: #f2f2f2;

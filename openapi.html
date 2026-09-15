@@ -9,53 +9,34 @@
   <body>
     <div id="Navbar" class="topnav">
       <a href="index.html">Return to Homepage</a>
+      <a href="#Facts">Facts</a>
+      <a href="#Photos">Photos</a>
     </div>
-    <nav>
-      <a class="nav-logo" href="#">Good Dogs Club</a>
-      <ul class="nav-links">
-        <li><a href="dogfacts.html">Facts</a></li>
-        <li><a href="dogbreeds.html">Breeds</a></li>
-        <li><a href="doggroups.html">Groups</a></li>
-      </ul>
-      <button class="nav-btn">Join the Club</button>
-    </nav>
     <br />
 
-    <section class="hero">
+    <section class="main">
       <!-- dog facts -->
-      <div class="hero-right">
-        <div class="hero-tag">Est. 2016</div>
-        <h1 class="hero-h1"><em>Dog Facts</em></h1>
-        <p class="hero-facts">
-          Dog API by kindruff
-          <br />
-          The Dog API provides dog data as a service!
-        </p>
+      <div id=Facts" class="dog-facts">
+        <h1 class="h1"><em>Dog Facts</em></h1>
+        <p class="description">Click below to read interesting dog facts. Woof!</p>
 
-        <div class="hero-actions">
+        <div class="actions">
           <a class="btn-primary" id="factButton" href="#facts">Get Facts!</a>
         </div>
       </div>
       <br />
 
-      <!-- dog breeds -->
-      <div class="hero-left">
-        <div class="hero-breed">Tag Here Est. 2016</div>
-        <h1 class="hero-dogbreed"><em>Dog Breeds</em></h1>
-        <p class="hero-dogbreed">
-          Breeds
-          <br />
-          Different breeds of dogs
-        </p>
+      <!-- dog images -->
+      <div id="Photos" class="dog-images">
+        <h1 class="h1"><em>Dog Photos</em></h1>
+        <p class="description">Click below to see a random dog. Woof!</p>
 
-        <div class="hero-actions">
-          <a class="btn-secondary" id="breedButton" href="#breeds">Get Breed!</a>
+        <div class="actions">
+          <a class="btn-secondary" id="imageButton" href="#images">Get Image!</a>
+          <img id="dog-image" src="" />
         </div>
       </div>
     </section>
-
-    <!-- <button type="buttonOne">Click Me</button>
-    <button type="buttonTwo">Click Me</button> -->
 
     <script src="js/openapi.js"></script>
   </body>
