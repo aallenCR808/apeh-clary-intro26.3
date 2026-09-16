@@ -67,17 +67,18 @@ messageForm.addEventListener("submit", function (event) {
   removeButton.addEventListener("click", function () {
     let entry = removeButton.parentNode;
     entry.remove();
-
-    if (document.querySelector("#messages>ul").children.length > 0)
-      document.querySelector("#messages").style.display = "block";
-    else document.querySelector("#messages").style.display = "none";
   });
 
   // add new message in messages section
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
   messageForm.reset();
+
+  if (document.querySelector("#messages>ul").children.length > 0)
+    document.querySelector("#messages").style.display = "block";
+  else document.querySelector("#messages").style.display = "none";
 });
+
 // footer: copyright, name and current date
 const body = document.body;
 const footer = document.createElement("footer");
